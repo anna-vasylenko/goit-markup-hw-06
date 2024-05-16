@@ -243,7 +243,6 @@ img {
 }
 .team-member-card {
   background-color: #ffffff;
-  width: 1128px;
   width: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -280,6 +279,7 @@ img {
   padding-top: 120px;
   padding-bottom: 72px;
 }
+
 .portfolio-list {
   display: flex;
   align-items: flex-start;
@@ -291,6 +291,13 @@ img {
   padding-right: 156px;
   padding-bottom: 120px;
   padding-left: 156px;
+}
+.portfolio-item {
+  background: #fff;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-item-title {
