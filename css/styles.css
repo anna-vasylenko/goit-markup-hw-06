@@ -486,24 +486,20 @@ img {
 .footer-network-link:focus {
   background-color: #31d0aa;
 }
-.form-subscribe {
-  display: flex;
-  align-items: flex-end;
-  gap: 24px;
-}
 
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.footer-label {
+.footer-subscribe-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -511,7 +507,7 @@ img {
   height: 40px;
   outline: none;
   background-color: transparent;
-  padding: 8px 16px;
+  padding-left: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 400;
   font-size: 12px;
@@ -528,21 +524,20 @@ img {
 }
 
 .footer-subscribe-btn {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #fff;
-  border-radius: 4px;
-  padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
+  border-radius: 4px;
   background-color: #4d5ae5;
-  padding: 8px 24px;
-  position: relative;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, background-color;
@@ -556,10 +551,7 @@ img {
 
 .footer-subscribe-icon {
   fill: #fff;
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
+  margin-left: 16px;
 }
 /* #endregion footer */
 
@@ -576,8 +568,8 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: visibility, opacity, pointer-events;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -598,12 +590,14 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   padding: 72px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -624,6 +618,7 @@ img {
 }
 .modal-close-icon {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
@@ -638,16 +633,14 @@ img {
   letter-spacing: 0.32px;
   margin-bottom: 16px;
 }
-.modal-form {
-  margin-bottom: 24px;
-}
+
 .modal-wrapper {
   margin-bottom: 8px;
 }
 .modal-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
@@ -665,6 +658,7 @@ img {
   padding: 0 38px;
   outline: none;
   background-color: transparent;
+  outline: transparent;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -683,6 +677,7 @@ img {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus + .modal-input-icon {
   fill: #4d5ae5;
@@ -695,6 +690,9 @@ img {
   width: 100%;
   min-height: 120px;
   padding: 8px 16px;
+  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  resize: none;
 }
 
 .modal-textarea::placeholder {
@@ -706,10 +704,11 @@ img {
 }
 
 .modal-checkbox-wrapper {
+  margin-bottom: 24px;
 }
 .modal-checkbox-input:checked + .checkbox-label-user > .checkbox-span {
   background-color: #404bbf;
-  border: 1px solid #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 .checkbox-label-user {
@@ -729,11 +728,12 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  color: #fcfcfc;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-icon {
-  fill: currentColor;
-}
+
 .checkbox-link {
   line-height: 1.33333;
   text-decoration: underline;
@@ -741,6 +741,7 @@ img {
 }
 
 .modal-send-btn {
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -754,9 +755,8 @@ img {
   border-radius: 4px;
   min-width: 169px;
   height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

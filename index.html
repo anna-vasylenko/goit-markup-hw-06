@@ -598,22 +598,23 @@
           </ul>
         </div>
         <div class="form-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-label" for="email-user">Subscribe</label>
-            <input
-              type="email"
-              name="email"
-              class="footer-input"
-              placeholder="E-mail"
-              id="email-user"
-            />
+            <label class="footer-label">
+              <input
+                type="email"
+                name="email"
+                class="footer-input"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-subscribe-btn">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
-          <button type="submit" class="footer-subscribe-btn">
-            Subscribe
-            <svg class="footer-subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
@@ -621,7 +622,7 @@
     <!-- #region Modal -->
     <div class="backdrop">
       <div class="modal">
-        <button class="modal-close-btn">
+        <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" height="8" width="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -674,10 +675,10 @@
           </div>
 
           <div class="modal-textarea-wrapper">
-            <label class="modal-label" for="comment-user">Comment</label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
-              name="comment-user"
-              id="comment-user"
+              name="user-comment"
+              id="user-comment"
               class="modal-textarea modal-input"
               rows="6"
               placeholder="Text input"
@@ -689,7 +690,7 @@
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
-              value="accept"
+              value="true"
               class="modal-checkbox-input visually-hidden"
             />
             <label for="user-privacy" class="checkbox-label-user">
@@ -701,8 +702,8 @@
               <a class="checkbox-link" href="#">Privacy Policy</a></label
             >
           </div>
+          <button class="modal-send-btn" type="submit">Send</button>
         </form>
-        <button class="modal-send-btn" type="submit">Send</button>
       </div>
     </div>
     <!-- #endregion Modal -->
