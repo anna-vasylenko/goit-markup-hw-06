@@ -1,0 +1,107 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .logo {
+    margin-right: 120px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-nav-studio {
+    display: block;
+  }
+
+  .header-nav-studio::after {
+    display: block;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-menu-btn {
+    display: none;
+  }
+
+  .main-page {
+    padding: 112px 0;
+    max-width: 768px;
+  }
+
+  .main-page-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 36px;
+  }
+
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .feature-item {
+    width: calc((100% - 1 * 24px) / 2);
+  }
+
+  .feature-item-title {
+    text-align: left;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 1 * 24px) / 2);
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    text-align: left;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .footer-container {
+    padding-left: 108px;
+  }
+}

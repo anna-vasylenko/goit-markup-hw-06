@@ -1,0 +1,97 @@
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .main-page {
+    padding: 188px 0;
+    max-width: 1440px;
+  }
+
+  .main-page-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 48px;
+  }
+
+  .features {
+    padding: 120px 0;
+  }
+
+  .features-list {
+    flex-wrap: no-wrap;
+    gap: 24px;
+  }
+  .feature-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .feature-icon-rct {
+    display: flex;
+  }
+
+  .feature-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .team {
+    padding: 120px 0;
+  }
+
+  .team-list {
+    flex-wrap: no-wrap;
+    gap: 24px;
+  }
+
+  .team-member-card {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .portfolio {
+    padding: 120px 0;
+  }
+
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  .footer-webstudio {
+    margin-right: 40px;
+  }
+}
