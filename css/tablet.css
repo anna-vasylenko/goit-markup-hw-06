@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 760px;
+    padding: 0 12px;
   }
 
   .logo {
@@ -37,6 +38,11 @@
   .main-page {
     padding: 112px 0;
     max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_tabl@1x.jpg);
   }
 
   .main-page-title {
@@ -65,6 +71,10 @@
     justify-content: center;
     align-items: center;
     gap: 64px 24px;
+  }
+
+  .team-member-photo {
+    max-width: 356px;
   }
 
   .portfolio-list {
@@ -105,10 +115,23 @@
     min-height: 584px;
     padding: 72px 24px 24px;
   }
+  .mobile-menu-container {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
   .footer-container {
     padding-left: 108px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_tabl@2x.jpg);
   }
 }

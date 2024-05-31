@@ -24,6 +24,11 @@
   .main-page {
     padding: 188px 0;
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_desk@1x.jpg);
   }
 
   .main-page-title {
@@ -67,7 +72,9 @@
   .team-member-card {
     width: calc((100% - 3 * 24px) / 4);
   }
-
+  .team-member-photo {
+    max-width: 360px;
+  }
   .portfolio {
     padding: 120px 0;
   }
@@ -93,5 +100,15 @@
 
   .footer-webstudio {
     margin-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_desk@2x.jpg);
   }
 }
