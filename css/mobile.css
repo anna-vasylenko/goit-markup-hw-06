@@ -708,6 +708,8 @@
   color: #8e8f99;
   cursor: pointer;
   line-height: 1.17;
+  display: flex;
+  align-items: center;
 }
 .checkbox-span {
   border-radius: 2px;
@@ -811,6 +813,11 @@
 
 .menu-close-icon {
   fill: #2e2f42;
+}
+
+.menu-close-btn:hover .menu-close-icon,
+.menu-close-btn:focus .menu-close-icon {
+  fill: #fff;
 }
 
 .menu-list-item:not(:last-child) {
